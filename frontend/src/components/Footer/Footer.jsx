@@ -3,7 +3,7 @@ import './Footer.css'
 import { assets } from '../../assets/assets'
 
 const Footer = () => {
-  const adminHandler = window.open("https://food-delivery-admin-o984.onrender.com","_blank");
+  function adminHandler = window.open("https://food-delivery-admin-o984.onrender.com","_blank");
   
   return (
     <div className='footer' id='footer'>
