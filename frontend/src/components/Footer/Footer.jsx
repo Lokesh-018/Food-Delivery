@@ -3,6 +3,9 @@ import './Footer.css'
 import { assets } from '../../assets/assets'
 
 const Footer = () => {
+  const adminHandler () => {
+    window.location.href = "https://food-delivery-admin-o984.onrender.com";
+  }
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
