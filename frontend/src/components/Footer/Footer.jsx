@@ -33,7 +33,7 @@ const Footer = () => {
             <ul>
                 <li>+91-1111-2222-00</li>
                 <li>contact@tomato.com</li>
-                <li onClick={adminHandler}>Admin</li>
+                <li onClick={adminHandler} target="_blank">Admin</li>
             </ul>
         </div>
       </div>
