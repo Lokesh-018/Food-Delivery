@@ -3,8 +3,9 @@ import './Footer.css'
 import { assets } from '../../assets/assets'
 
 const Footer = () => {
-  function adminHandler = window.open("https://food-delivery-admin-o984.onrender.com","_blank");
-  
+  const adminHandler = () =>{
+    window.location.href("https://food-delivery-admin-o984.onrender.com");
+  }
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
@@ -32,7 +33,7 @@ const Footer = () => {
             <ul>
                 <li>+91-1111-2222-00</li>
                 <li>contact@tomato.com</li>
-                <li onClick="adminHandler">Admin</li>
+                <li onClick={adminHandler} target="_blank">Admin</li>
             </ul>
         </div>
       </div>
