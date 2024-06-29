@@ -3,7 +3,7 @@ import './Footer.css'
 import { assets } from '../../assets/assets'
 
 const Footer = () => {
-  const adminHandler () => {
+  const adminHandler = () => {
     window.location.href = "https://food-delivery-admin-o984.onrender.com";
   }
   return (
@@ -33,7 +33,7 @@ const Footer = () => {
             <ul>
                 <li>+91-1111-2222-00</li>
                 <li>contact@tomato.com</li>
-                <li>Admin</li>
+                <li onClick={adminHandler}>Admin</li>
             </ul>
         </div>
       </div>
