@@ -3,9 +3,10 @@ import './Footer.css'
 import { assets } from '../../assets/assets'
 
 const Footer = () => {
-  const adminHandler = () =>{
-    window.location.href("https://food-delivery-admin-o984.onrender.com");
-  }
+  const adminHandler = (url) => {
+  window.open(url, '_blank', 'noopener,noreferrer');
+};
+
   return (
     <div className='footer' id='footer'>
       <div className="footer-content">
@@ -33,7 +34,7 @@ const Footer = () => {
             <ul>
                 <li>+91-1111-2222-00</li>
                 <li>contact@tomato.com</li>
-                <li onClick={adminHandler} target="_blank">Admin</li>
+                <li onClick={() => openLinkInNewTab('https://food-delivery-admin-o984.onrender.com')}>Admin</li>
             </ul>
         </div>
       </div>
