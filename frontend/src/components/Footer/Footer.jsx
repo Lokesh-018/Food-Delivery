@@ -34,7 +34,7 @@ const Footer = () => {
             <ul>
                 <li>+91-1111-2222-00</li>
                 <li>contact@tomato.com</li>
-                <li onClick={() => openLinkInNewTab('https://food-delivery-admin-o984.onrender.com')}>Admin</li>
+                <li onClick={() => adminHandler('https://food-delivery-admin-o984.onrender.com')}>Admin</li>
             </ul>
         </div>
       </div>
